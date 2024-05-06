@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    border: black solid 2px;
+    border-radius: .5rem;
+}
+
+button:hover {
+    opacity: 70%;
+}
+
+button:active {
+    box-shadow: black 1px 1px 5px;
+    border: #6d5dfc solid 2px;
+}
+
+#history {
+    padding: 10px;
+    color: rebeccapurple;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+}
+
+.calc-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 630px;
+    height: 400px;
+    gap: 10px;
+}
+
+.calc-buttons button {
+    flex-basis: 150px;
+}
+
+.calc-display {
+    font-size: 1.5rem;
+    border: black solid 2px;
+    width: 630px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.popup-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    background: white;
+    right: 600px;
+    height: 250px;
+    overflow: scroll;
+    border-radius: 5px;
+    border: black solid 2px;
+}
+
+.modal-container {
+    display: flex;
+    gap: 5px;
+}
+
+.history-buttons, .equals-buttons {
+    font-family: sans-serif;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.history-buttons {
+    width: 70px;
+    font-size: 1rem;
+    border: #d7d3d3 solid 2px;
+}
+
+.equals-buttons {
+    width: 30px;
+}
+
+.display {
+    font-family: "Roboto Light", sans-serif;
+}
+
+#equals {
+    background: #6d5dfc;
+    color: white;
+    flex-grow: 1;
+}
+
+.number-buttons {
+    background: #F4F6F6;
+}
+
+.function-buttons {
+    background: #D5DBDB;
+}
+
+#clear {
+    background: #F34444;
+}
+
+.hidden {
+    visibility: hidden;
+}
